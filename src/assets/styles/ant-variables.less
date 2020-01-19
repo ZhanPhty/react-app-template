@@ -1,0 +1,29 @@
+/*
+ * ant-design 主题全局变量
+ * @link https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+ */
+
+// -------- Colors -----------
+@primary-color: @primary;
+
+// -------- Input -----------
+@input-height-base : 36px;
+@input-height-lg : 44px;
+@input-height-sm : 30px;
+
+// -------- Button -----------
+@btn-height-base : 36px;
+@btn-height-lg : 44px;
+@btn-height-sm : 30px;
+
+
+/*
+ * -------- 定制框架样式 -----------
+ */
+
+// 去除ant框架button点击的光晕效果
+button[ant-click-animating-without-extra-node]:after {
+  border: 0 none;
+  opacity: 0;
+  animation:none 0 ease 0 1 normal;
+}
